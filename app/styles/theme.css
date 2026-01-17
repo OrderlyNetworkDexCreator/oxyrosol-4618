@@ -1,88 +1,123 @@
 :root {
   --oui-font-family: 'Manrope', sans-serif;
 
+  /* global font sizes */
+  --oui-font-size-xs: 12px;   /* small labels, table footers */
+  --oui-font-size-sm: 12px;   /* default small text */
+  --oui-font-size-md: 14px;   /* default body, chart labels */
+  --oui-font-size-lg: 16px;   /* nav items, headings */
+  --oui-font-size-xl: 20px;   /* section titles, key values */
+  --oui-font-size-2xl: 24px;  /* page titles */
+
+  /* specific semantic font sizes */
+  --oui-font-size-nav: var(--oui-font-size-lg);              /* 16px */
+  --oui-font-size-stats-label: 12px;                         /* stats labels */
+  --oui-font-size-stats-value: 15px;                         /* stats values (was 14px) */
+  --oui-font-size-chart-axis: var(--oui-font-size-sm);       /* 12px */
+  --oui-font-size-chart-lastprice: var(--oui-font-size-md);  /* 14px */
+  --oui-font-size-button: var(--oui-font-size-md);           /* 14px */
+  --oui-font-size-pair-name: var(--oui-font-size-xl);        /* 20px */
+
+  /*  order book specific sizes */
+  --oui-font-size-ob-header: 13px;   /* was 12px */
+  --oui-font-size-ob-row:    14px;   /* was 13px */
+  --oui-font-size-ob-mid:    19px;   /* was 20px */
+
+  /* font weights + line-heights */
+  --oui-font-weight-regular: 400;
+  --oui-font-weight-medium: 500;
+  --oui-font-weight-semibold: 600;
+  --oui-font-weight-bold: 700;
+
+  --oui-line-height-tight: 1.15;
+  --oui-line-height-normal: 1.35;
+  --oui-line-height-loose: 1.5;
+
   /* colors */
-  --oui-color-primary: 176 132 233;
-  --oui-color-primary-light: 213 190 244;
-  --oui-color-primary-darken: 137 76 209;
+  --oui-color-primary: 34 211 238;               /* oxy cyan */
+  --oui-color-primary-light: 103 232 249;        /* lighter cyan */
+  --oui-color-primary-darken: 6 182 212;         /* deeper cyan */
   --oui-color-primary-contrast: 255 255 255;
 
-  --oui-color-link: 189 107 237;
-  --oui-color-link-light: 217 152 250;
+  --oui-color-link: 34 211 238;
+  --oui-color-link-light: 103 232 249;
 
   --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 218 218 218;
-  --oui-color-quaternary: 218 218 218;
+  --oui-color-tertiary: 148 163 184;             /* slate-400 */
+  --oui-color-quaternary: 100 116 139;           /* slate-500 */
 
-  --oui-color-danger: 245 97 139;
-  --oui-color-danger-light: 250 167 188;
-  --oui-color-danger-darken: 237 72 122;
+  --oui-color-danger: 248 113 113;               /* red-400 */
+  --oui-color-danger-light: 252 165 165;         /* red-300 */
+  --oui-color-danger-darken: 239 68 68;          /* red-500 */
   --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 41 233 169;
-  --oui-color-success-light: 101 240 194;
-  --oui-color-success-darken: 0 161 120;
+  --oui-color-success: 52 211 153;               /* emerald-400 */
+  --oui-color-success-light: 110 231 183;        /* emerald-300 */
+  --oui-color-success-darken: 16 185 129;        /* emerald-500 */
   --oui-color-success-contrast: 255 255 255;
 
-  --oui-color-warning: 255 209 70;
-  --oui-color-warning-light: 255 229 133;
-  --oui-color-warning-darken: 255 152 0;
+  --oui-color-warning: 251 191 36;               /* amber-400 */
+  --oui-color-warning-light: 252 211 77;         /* amber-300 */
+  --oui-color-warning-darken: 245 158 11;        /* amber-500 */
   --oui-color-warning-contrast: 255 255 255;
 
-  --oui-color-fill: 36 32 47;
-  --oui-color-fill-active: 40 46 58;
+  /* graphite surfaces (not pure black) */
+  --oui-color-fill: 12 16 24;
+  --oui-color-fill-active: 20 26 40;
 
-  --oui-color-base-1: 93 83 123;
-  --oui-color-base-2: 81 72 107;
-  --oui-color-base-3: 68 61 69;
-  --oui-color-base-4: 57 52 74;
-  --oui-color-base-5: 51 46 66;
-  --oui-color-base-6: 43 38 56;
-  --oui-color-base-7: 36 32 47;
-  --oui-color-base-8: 29 26 38;
-  --oui-color-base-9: 22 20 28;
-  --oui-color-base-10: 14 13 18;
+  /* base scale (shifted from purple -> graphite/slate) */
+  --oui-color-base-1: 30 41 59;
+  --oui-color-base-2: 26 34 52;
+  --oui-color-base-3: 23 30 46;
+  --oui-color-base-4: 20 26 40;
+  --oui-color-base-5: 17 23 35;
+  --oui-color-base-6: 15 20 31;
+  --oui-color-base-7: 37 52 74;
+  --oui-color-base-8: 12 16 24;
+  --oui-color-base-9: 9 12 18;
+  --oui-color-base-10: 20 26 40;
 
-  --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 255 255 255;
+  --oui-color-base-foreground: 248 250 252;      /* soft white */
+  --oui-color-line: 51 65 85;                    /* visible borders */
 
-  --oui-color-trading-loss: 245 97 139;
+  --oui-color-trading-loss: 248 113 113;         /* red sell text */
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 41 233 169;
+  --oui-color-trading-profit: 34 211 238;        /* cyan buy text */
   --oui-color-trading-profit-contrast: 255 255 255;
 
   /* gradients */
-  --oui-gradient-primary-start: 40 0 97;
-  --oui-gradient-primary-end: 189 107 237;
+  --oui-gradient-primary-start: 34 211 238;
+  --oui-gradient-primary-end: 103 232 249;
 
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
+  /* remove purple: make secondary a subtle slate->cyan */
+  --oui-gradient-secondary-start: 12 18 32;
+  --oui-gradient-secondary-end: 34 211 238;
 
-  --oui-gradient-success-start: 1 83 68;
-  --oui-gradient-success-end: 41 223 169;
+  --oui-gradient-success-start: 6 95 70;
+  --oui-gradient-success-end: 52 211 153;
 
-  --oui-gradient-danger-start: 153 24 76;
-  --oui-gradient-danger-end: 245 97 139;
+  --oui-gradient-danger-start: 127 29 29;
+  --oui-gradient-danger-end: 248 113 113;
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
-  --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
+  --oui-gradient-brand-start: 34 211 238;
+  --oui-gradient-brand-end: 6 182 212;
+  --oui-gradient-brand-stop-start: 8%;
+  --oui-gradient-brand-stop-end: 88%;
+  --oui-gradient-brand-angle: 18deg;
 
-  --oui-gradient-warning-start: 152 58 8;
-  --oui-gradient-warning-end: 255 209 70;
+  --oui-gradient-warning-start: 120 53 15;
+  --oui-gradient-warning-end: 251 191 36;
 
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
+  --oui-gradient-neutral-start: 6 9 14;
+  --oui-gradient-neutral-end: 17 24 39;
 
   /* rounded */
-  --oui-rounded-sm: 2px;
-  --oui-rounded: 4px;
+  --oui-rounded-sm: 0px;
+  --oui-rounded: 0px;
   --oui-rounded-md: 6px;
-  --oui-rounded-lg: 8px;
-  --oui-rounded-xl: 12px;
-  --oui-rounded-2xl: 16px;
+  --oui-rounded-lg: 0px;
+  --oui-rounded-xl: 0px;
+  --oui-rounded-2xl: 0px;
   --oui-rounded-full: 9999px;
 
   /* spacing */
