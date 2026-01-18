@@ -36,7 +36,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_AVAILABLE_LANGUAGES": "en",
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
-  "VITE_TRADING_VIEW_COLOR_CONFIG": "",
+  "VITE_TRADING_VIEW_COLOR_CONFIG": "{\"upColor\":\"#22D3EE\",\"downColor\":\"#FB7185\",\"pnlUpColor\":\"#22d3ee\",\"pnlDownColor\":\"#FB7185\",\"chartBG\":\"#141a22\"}",
   "VITE_ANALYTICS_SCRIPT": "",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
