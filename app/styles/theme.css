@@ -2,71 +2,75 @@
   --oui-font-family: 'Manrope', sans-serif;
   --oui-font-size-base: 16px;
 
-  /* colors */
-  --oui-color-primary: 139 92 246;
-  --oui-color-primary-light: 167 139 250;
-  --oui-color-primary-darken: 139 92 246;
-  --oui-color-primary-contrast: 255 255 255;
+  /* === LIME PRIMARY (was purple) === */
+  --oui-color-primary: 163 255 18;
+  --oui-color-primary-light: 191 255 102;
+  --oui-color-primary-darken: 138 224 0;
+  --oui-color-primary-contrast: 0 0 0;
 
-  --oui-color-link: 139 92 246;
-  --oui-color-link-light: 167 139 250;
+  --oui-color-link: 163 255 18;
+  --oui-color-link-light: 191 255 102;
 
   --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 148 163 184;
-  --oui-color-quaternary: 100 116 139;
+  --oui-color-tertiary: 161 161 170;
+  --oui-color-quaternary: 113 113 122;
 
-  --oui-color-danger: 248 113 113;
-  --oui-color-danger-light: 252 165 165;
-  --oui-color-danger-darken: 239 68 68;
+  /* === DANGER (kept red but slightly hot-pink to match Perpolis short-color) === */
+  --oui-color-danger: 255 60 110;
+  --oui-color-danger-light: 255 120 156;
+  --oui-color-danger-darken: 224 36 86;
   --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 52 211 153;
-  --oui-color-success-light: 110 231 183;
-  --oui-color-success-darken: 16 185 129;
-  --oui-color-success-contrast: 255 255 255;
+  /* === SUCCESS (now lime, matches profit) === */
+  --oui-color-success: 163 255 18;
+  --oui-color-success-light: 191 255 102;
+  --oui-color-success-darken: 138 224 0;
+  --oui-color-success-contrast: 0 0 0;
 
   --oui-color-warning: 251 191 36;
   --oui-color-warning-light: 252 211 77;
   --oui-color-warning-darken: 245 158 11;
-  --oui-color-warning-contrast: 255 255 255;
+  --oui-color-warning-contrast: 0 0 0;
 
-  --oui-color-fill: 12 16 24;
-  --oui-color-fill-active: 20 26 40;
+  /* === NEUTRAL BLACK BASE (was slate-blue) === */
+  --oui-color-fill: 10 10 10;
+  --oui-color-fill-active: 20 20 20;
 
-  --oui-color-base-1: 30 41 59;
-  --oui-color-base-2: 26 34 52;
-  --oui-color-base-3: 23 30 46;
-  --oui-color-base-4: 20 26 40;
-  --oui-color-base-5: 17 23 35;
-  --oui-color-base-6: 15 20 31;
-  --oui-color-base-7: 37 52 74;
-  --oui-color-base-8: 12 16 24;
-  --oui-color-base-9: 9 12 18;
-  --oui-color-base-10: 20 26 40;
+  --oui-color-base-1: 38 38 38;
+  --oui-color-base-2: 32 32 32;
+  --oui-color-base-3: 28 28 28;
+  --oui-color-base-4: 24 24 24;
+  --oui-color-base-5: 20 20 20;
+  --oui-color-base-6: 17 17 17;
+  --oui-color-base-7: 45 45 45;
+  --oui-color-base-8: 14 14 14;
+  --oui-color-base-9: 10 10 10;
+  --oui-color-base-10: 24 24 24;
 
   --oui-color-base-foreground: 248 250 252;
-  --oui-color-line: 51 65 85;
+  --oui-color-line: 51 51 51;
 
-  --oui-color-trading-loss: 248 113 113;
+  /* === TRADING COLORS — lime for profit, hot-pink for loss === */
+  --oui-color-trading-loss: 255 60 110;
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 34 211 238;
-  --oui-color-trading-profit-contrast: 255 255 255;
+  --oui-color-trading-profit: 163 255 18;
+  --oui-color-trading-profit-contrast: 0 0 0;
 
-  /* gradients */
-  --oui-gradient-primary-start: 34 211 238;
-  --oui-gradient-primary-end: 103 232 249;
+  /* === LIME GRADIENTS === */
+  --oui-gradient-primary-start: 163 255 18;
+  --oui-gradient-primary-end: 191 255 102;
 
-  --oui-gradient-secondary-start: 12 18 32;
-  --oui-gradient-secondary-end: 34 211 238;
+  --oui-gradient-secondary-start: 10 10 10;
+  --oui-gradient-secondary-end: 163 255 18;
 
-  --oui-gradient-success-start: 6 95 70;
-  --oui-gradient-success-end: 52 211 153;
+  --oui-gradient-success-start: 60 102 0;
+  --oui-gradient-success-end: 163 255 18;
 
-  --oui-gradient-danger-start: 127 29 29;
-  --oui-gradient-danger-end: 248 113 113;
+  --oui-gradient-danger-start: 110 20 40;
+  --oui-gradient-danger-end: 255 60 110;
 
-  --oui-gradient-brand-start: 167 139 250;
-  --oui-gradient-brand-end: 139 92 246;
+  --oui-gradient-brand-start: 191 255 102;
+  --oui-gradient-brand-end: 163 255 18;
   --oui-gradient-brand-stop-start: 8%;
   --oui-gradient-brand-stop-end: 88%;
   --oui-gradient-brand-angle: 18deg;
@@ -74,8 +78,8 @@
   --oui-gradient-warning-start: 120 53 15;
   --oui-gradient-warning-end: 251 191 36;
 
-  --oui-gradient-neutral-start: 6 9 14;
-  --oui-gradient-neutral-end: 17 24 39;
+  --oui-gradient-neutral-start: 6 6 6;
+  --oui-gradient-neutral-end: 17 17 17;
 
   /* rounded */
   --oui-rounded-sm: 0px;
